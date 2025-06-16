@@ -13,16 +13,16 @@ To run the project, we recommend using a Python virtual environment with Python 
 ```bash
 git clone https://github.com/dodi007/Water_Quality_Prediction_RTSGAN-GNN-LSTM.git
 cd Water_Quality_Prediction_RTSGAN-GNN-LSTM
-
+```
 ## Install Required Packages
 ```bash
 pip install -r requirements.txt
-
+```
 Firstly, missing data for DO at Senta and Zemun stations were populated using KNN. Run the script from KNN_for_missing_values_imputation folder. FInal, populated datasets used for RTSGAN training are in the RTSGAN/data folder.
 The original/raw data can be found in the raw_data folder.
 
 Secondly, to generate synthetic data, input training data for the RTSGAN needs to be prepared. To prepare data run prepare_data.ipynb script from the RSTGAN folder. After that run main_rtsgan.py.
 ### CHECK ON PATHS IN THE FILES.
 
-# Forecasting models - GNN and LSTM
+## Forecasting models - GNN and LSTM
 Both DL models can be trained only with original data and additionally with synthtetic data. To train the models run the scripts in the GNN-LSTM folder. Again customize paths and portion of the synthetic data.
