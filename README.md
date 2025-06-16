@@ -4,7 +4,7 @@ Forecasting of water quality data (water temperature and dissolved oxygen) at th
 Firstly, missing data for DO at Senta and Zemun stations were populated using KNN. FInal datasets used for RTSGAN training are in the RTSGAN/data folder.
 
 Secondly, to generate synthetic data, input training data for the RTSGAN needs to be prepared. To prepare data run prepare_data.ipynb script. After that run main_rtsgan.py. Both scripts are in the RTSGAN folder.
-# CHECK ON PATHS IN THE FILES!
+### CHECK ON PATHS IN THE FILES.
 
 # Forecasting models - GNN and LSTM
-Both models can be trained only with original data and additionally with synthtetic data. To train the models run the scripts in the GNN-LSTM folder. Again customize paths!
+Both models can be trained only with original data and additionally with synthtetic data. To train the models run the scripts in the GNN-LSTM folder. Again customize paths.
